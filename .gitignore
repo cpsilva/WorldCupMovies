@@ -3,3 +3,10 @@
 ################################################################################
 
 /WorldCupMovies/.vs
+/WorldCupMovies/WorldCupMovies.ApplicationService/obj
+/WorldCupMovies/WorldCupMovies.DependencyInjection/obj
+/WorldCupMovies/WorldCupMovies.Domain/obj
+/WorldCupMovies/WorldCupMovies.Model/obj
+/WorldCupMovies/WorldCupMovies.Tests/obj
+/WorldCupMovies/WorldCupMovies.UserInterface/e2e
+/WorldCupMovies/WorldCupMovies.UserInterface/README.md
