@@ -13,4 +13,9 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WorldCupMovies.CrossCutting\WorldCupMovies.CrossCutting.csproj" />
+    <ProjectReference Include="..\WorldCupMovies.DependencyInjection\WorldCupMovies.DependencyInjection.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -10,3 +10,10 @@
 /WorldCupMovies/WorldCupMovies.Tests/obj
 /WorldCupMovies/WorldCupMovies.UserInterface/e2e
 /WorldCupMovies/WorldCupMovies.UserInterface/README.md
+/WorldCupMovies/WorldCupMovies.ApplicationService/bin/Debug/netcoreapp2.1
+/WorldCupMovies/WorldCupMovies.CrossCutting/bin/Debug/netcoreapp2.1
+/WorldCupMovies/WorldCupMovies.CrossCutting/obj
+/WorldCupMovies/WorldCupMovies.DependencyInjection/bin/Debug/netcoreapp2.1
+/WorldCupMovies/WorldCupMovies.Domain/bin/Debug/netcoreapp2.1
+/WorldCupMovies/WorldCupMovies.Model/bin/Debug/netcoreapp2.1
+/WorldCupMovies/WorldCupMovies.Tests/bin/Debug/netcoreapp2.1

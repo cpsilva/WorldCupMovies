@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldCupMovies.Domain", "WorldCupMovies.Domain\WorldCupMovies.Domain.csproj", "{DA0DCE02-71FA-43ED-9132-1E1C6146C860}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldCupMovies.Domain", "WorldCupMovies.Domain\WorldCupMovies.Domain.csproj", "{DA0DCE02-71FA-43ED-9132-1E1C6146C860}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldCupMovies.Model", "WorldCupMovies.Model\WorldCupMovies.Model.csproj", "{784A8188-F729-4552-B348-7ED387868034}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldCupMovies.Model", "WorldCupMovies.Model\WorldCupMovies.Model.csproj", "{784A8188-F729-4552-B348-7ED387868034}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldCupMovies.Tests", "WorldCupMovies.Tests\WorldCupMovies.Tests.csproj", "{66DD62A6-C2EB-4517-8E10-2DCE511370CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldCupMovies.Tests", "WorldCupMovies.Tests\WorldCupMovies.Tests.csproj", "{66DD62A6-C2EB-4517-8E10-2DCE511370CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldCupMovies.ApplicationService", "WorldCupMovies.ApplicationService\WorldCupMovies.ApplicationService.csproj", "{8F1672C1-42A3-4E37-9AB4-55AB36F5F463}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldCupMovies.ApplicationService", "WorldCupMovies.ApplicationService\WorldCupMovies.ApplicationService.csproj", "{8F1672C1-42A3-4E37-9AB4-55AB36F5F463}"
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WorldCupMovies.UserInterface", "WorldCupMovies.UserInterface\", "{62151FDD-F4C9-4353-9AC3-B4C3C49DF067}"
 	ProjectSection(WebsiteProperties) = preProject
@@ -32,7 +32,9 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WorldCupMovies.UserInterfac
 		SlnRelativePath = "WorldCupMovies.UserInterface\"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldCupMovies.DependencyInjection", "WorldCupMovies.DependencyInjection\WorldCupMovies.DependencyInjection.csproj", "{2C1EB281-6152-41D0-8D13-CED269D28281}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldCupMovies.DependencyInjection", "WorldCupMovies.DependencyInjection\WorldCupMovies.DependencyInjection.csproj", "{2C1EB281-6152-41D0-8D13-CED269D28281}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldCupMovies.CrossCutting", "WorldCupMovies.CrossCutting\WorldCupMovies.CrossCutting.csproj", "{B09A8606-896F-499D-A608-762815216320}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -64,6 +66,10 @@ Global
 		{2C1EB281-6152-41D0-8D13-CED269D28281}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C1EB281-6152-41D0-8D13-CED269D28281}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C1EB281-6152-41D0-8D13-CED269D28281}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B09A8606-896F-499D-A608-762815216320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B09A8606-896F-499D-A608-762815216320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B09A8606-896F-499D-A608-762815216320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B09A8606-896F-499D-A608-762815216320}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
