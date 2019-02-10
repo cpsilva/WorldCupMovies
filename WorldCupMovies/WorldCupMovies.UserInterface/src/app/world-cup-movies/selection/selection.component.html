@@ -13,17 +13,17 @@
 </p>
 
 <div class="uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-4@l uk-grid-match" uk-grid>
-    <div >
+    <div *ngFor="let movie of movies">
         <div class="uk-card uk-card-default uk-card-body uk-border">
             <div uk-grid>
                 <div class="uk-width-1-6 uk-inline">
                     <div class="uk-position-center">
-                        <input class="uk-checkbox" type="checkbox" name="select">
+                        <input class="uk-checkbox" type="checkbox" name="select" [(ngModel)]="movie.selected">
                     </div>
                 </div>
                 <div class="uk-width-5-6 uk-padding-remove">
-                    <div class="uk-text-bold"></div>
-                    <div></div>
+                  <div class="uk-text-bold">{{ movie.titulo }}</div>
+                  <div>{{ movie.ano }}</div>
                 </div>
             </div>
         </div>
