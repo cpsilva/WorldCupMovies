@@ -1,29 +1,29 @@
-<h2 class="uk-text-bold">Selection Phase</h2>
+<h2 class="uk-text-bold">Fase de Seleção</h2>
 
 <p>
-    Select 8 movies that you want to enter the competition and then press the "Generate My Championship" button to proceed.
+    Selecione 8 filmes que você deseja que entrem na competição e depois precione o botão 'Gerar Meu Campeonato' para prosseguir.
 </p>
 
 <p>
-    <button class="uk-button uk-button-secondary uk-button-large" >Generate My Championship</button>
+    <button class="uk-button uk-button-secondary uk-button-large" [disabled]="!isQuantidadeSelecionada()" (click)="gerarCampeonato()">Gerar Meu Campeonato</button>
 </p>
 
 <p>
-    <span class="uk-text-bold">Selected:</span>
+    <span class="uk-text-bold">Selecionados: {{ quantidadeSelecionada() }} of {{ quantidadeTotalSelecionar }}</span>
 </p>
 
 <div class="uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-4@l uk-grid-match" uk-grid>
-    <div *ngFor="let movie of movies">
+    <div *ngFor="let filme of filmes">
         <div class="uk-card uk-card-default uk-card-body uk-border">
             <div uk-grid>
                 <div class="uk-width-1-6 uk-inline">
                     <div class="uk-position-center">
-                        <input class="uk-checkbox" type="checkbox" name="select" [(ngModel)]="movie.selected">
+                        <input class="uk-checkbox" type="checkbox" name="select" [(ngModel)]="filme.selecionado">
                     </div>
                 </div>
                 <div class="uk-width-5-6 uk-padding-remove">
-                  <div class="uk-text-bold">{{ movie.titulo }}</div>
-                  <div>{{ movie.ano }}</div>
+                  <div class="uk-text-bold">{{ filme.titulo }}</div>
+                  <div>{{ filme.ano }}</div>
                 </div>
             </div>
         </div>

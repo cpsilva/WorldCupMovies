@@ -29,9 +29,9 @@ namespace WorldCupMovies.Domain.FinalDomain
         {
             var resultadoJogo = new List<Partida>();
 
-            var matches = participantes.Count / 2;
+            var partidas = participantes.Count / 2;
 
-            for (var i = 0; i < matches; i++)
+            for (var i = 0; i < partidas; i++)
             {
                 var j = participantes.Count - (i + 1);
 

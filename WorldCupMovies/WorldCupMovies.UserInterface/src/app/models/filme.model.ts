@@ -1,7 +1,7 @@
-export class Movie {
+export class Filme {
   id: string;
   nota: number;
   titulo: string;
   ano: number;
-  selected: number;
+  selecionado: boolean;
 }

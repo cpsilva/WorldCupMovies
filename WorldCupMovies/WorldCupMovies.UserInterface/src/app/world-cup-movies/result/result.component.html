@@ -1,7 +1,7 @@
-<h2 class="uk-text-bold">Final Result</h2>
+<h2 class="uk-text-bold">Resultado Final</h2>
 
 <p>
-    See the final result of the film championship in a simple and fast way.
+    Veja o resultado final do Campeonato de Filmes de forma simples e rápida.
 </p>
 
 <div class="uk-text-center uk-grid-match" uk-grid>
@@ -12,7 +12,7 @@
     </div>
     <div class="uk-width-expand uk-text-left uk-padding-remove-left uk-border">
         <div class="uk-card uk-card-default uk-card-body">
-            <h1></h1>
+            <h1>{{ resultadoCampeonato.campeao.titulo }}</h1>
         </div>
     </div>
 </div>
@@ -25,11 +25,11 @@
     </div>
     <div class="uk-width-expand uk-text-left uk-padding-remove-left uk-border">
         <div class="uk-card uk-card-default uk-card-body">
-            <h1></h1>
+            <h1>{{ resultadoCampeonato.vice.titulo }}</h1>
         </div>
     </div>
 </div>
 
 <p uk-margin>
-    <button class="uk-button uk-button-default uk-button-large" (click)="back()">Back</button>
+    <button class="uk-button uk-button-secondary uk-button-large" (click)="voltar()">voltar</button>
 </p>
