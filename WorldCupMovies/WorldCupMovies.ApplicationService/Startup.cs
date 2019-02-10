@@ -20,6 +20,7 @@ namespace WorldCupMovies.ApplicationService
         {
             services.AddDependencyInjectionCustom(Configuration);
             services.AddCors();
+            services.AddMvcCustom();
             Container.RegisterServices(services);
         }
 

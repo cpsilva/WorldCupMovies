@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using System;
+using WorldCupMovies.Domain.FilmeDomain;
+using WorldCupMovies.Domain.FinalDomain;
 
 namespace WorldCupMovies.DependencyInjection
 {
@@ -28,8 +30,9 @@ namespace WorldCupMovies.DependencyInjection
         {
             _services = services ?? new ServiceCollection();
 
-            //ChamadoFacil.BusinessLogic
-            //_services.AddScoped<IAuthenticationBll, AuthenticationBll>();
+            // WorldCupMovies.Domain
+            _services.AddScoped<IFilmeDomain, FilmeDomain>();
+            _services.AddScoped<IFinalDomain, FinalDomain>();
 
             return _services;
         }

@@ -9,6 +9,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WorldCupMovies.Domain\WorldCupMovies.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Microsoft.Extensions.DependencyInjection">
       <HintPath>..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.dependencyinjection\2.1.1\lib\netcoreapp2.0\Microsoft.Extensions.DependencyInjection.dll</HintPath>
     </Reference>
