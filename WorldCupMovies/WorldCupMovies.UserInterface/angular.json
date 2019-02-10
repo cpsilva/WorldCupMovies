@@ -22,10 +22,14 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
+            "scripts": [
+              "node_modules/uikit/dist/js/uikit.min.js",
+              "node_modules/uikit/dist/js/uikit-icons.min.js"
+          ],
+          "styles": [
+              "node_modules/uikit/dist/css/uikit.min.css",
               "src/styles.css"
-            ],
-            "scripts": []
+          ]
           },
           "configurations": {
             "production": {
