@@ -2,8 +2,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-// import { HandlersModule } from './handlers/handlers.module';
-// import { InterceptorsModule } from './interceptors/interceptors.module';
+import { ServicesModule } from './services/services.module';
 
 @NgModule({
     exports: [
@@ -11,16 +10,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         FormsModule,
         HttpClientModule,
         ReactiveFormsModule,
-        // HandlersModule,
-        // InterceptorsModule
+        ServicesModule
     ],
     imports: [
         CommonModule,
         FormsModule,
         HttpClientModule,
-        ReactiveFormsModule,
-        // HandlersModule,
-        // InterceptorsModule
+        ReactiveFormsModule
     ]
 })
 export class SharedModule { }
