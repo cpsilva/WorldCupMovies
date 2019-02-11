@@ -40,3 +40,5 @@
 4. Executar o projeto com o IIS Express.
 
 5. Neste momento a API da aplicação já está disponivel para acesso e consulta, assim basta ir para guia de interface e realizar o seu campeonato de filmes.
+
+6. E que vença o melhor filme!
