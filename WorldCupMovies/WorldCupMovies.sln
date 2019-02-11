@@ -6,8 +6,14 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldCupMovies.Model", "WorldCupMovies.Model\WorldCupMovies.Model.csproj", "{784A8188-F729-4552-B348-7ED387868034}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldCupMovies.Tests", "WorldCupMovies.Tests\WorldCupMovies.Tests.csproj", "{66DD62A6-C2EB-4517-8E10-2DCE511370CC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{559C415B-4F18-49EE-A970-2D3489E17A1F} = {559C415B-4F18-49EE-A970-2D3489E17A1F}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldCupMovies.ApplicationService", "WorldCupMovies.ApplicationService\WorldCupMovies.ApplicationService.csproj", "{8F1672C1-42A3-4E37-9AB4-55AB36F5F463}"
+	ProjectSection(ProjectDependencies) = postProject
+		{559C415B-4F18-49EE-A970-2D3489E17A1F} = {559C415B-4F18-49EE-A970-2D3489E17A1F}
+	EndProjectSection
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WorldCupMovies.UserInterface", "WorldCupMovies.UserInterface\", "{62151FDD-F4C9-4353-9AC3-B4C3C49DF067}"
 	ProjectSection(WebsiteProperties) = preProject

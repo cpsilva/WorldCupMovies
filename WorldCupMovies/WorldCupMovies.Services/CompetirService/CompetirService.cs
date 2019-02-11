@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using WorldCupMovies.Model;
 using WorldCupMovies.Services.FilmeService;
@@ -16,6 +17,11 @@ namespace WorldCupMovies.Services.CompetirService
 
         public Final Competir(IList<Filme> filmes)
         {
+            if (filmes.Count != 8)
+            {
+                throw new Exception("Lista de filmes possui um valor diferente de 8");
+            }
+
             var participantes = _filmeService.ListarOrdenadoSelecionados(filmes);
 
             var resultadoPartida = CompetirFaseGrupos(participantes);

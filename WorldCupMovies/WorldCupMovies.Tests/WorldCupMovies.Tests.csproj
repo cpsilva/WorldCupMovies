@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WorldCupMovies.DependencyInjection\WorldCupMovies.DependencyInjection.csproj" />
-    <ProjectReference Include="..\WorldCupMovies.Domain\WorldCupMovies.Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>
