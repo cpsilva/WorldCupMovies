@@ -23,8 +23,12 @@
 * Análise de Código (TSLint para o Typescript, Code Factor)
 
 # Screenshots
+![](https://github.com/cpsilva/WorldCupMovies/blob/master/Screenshots/SelecaoFilmes.PNG)
+![](https://github.com/cpsilva/WorldCupMovies/blob/master/Screenshots/SelectedItens.PNG)
+![](https://github.com/cpsilva/WorldCupMovies/blob/master/Screenshots/result.PNG)
 
 # Camadas
+![](https://github.com/cpsilva/WorldCupMovies/blob/master/Screenshots/Solution.PNG)
 
 # Execução do Projeto Angular e IIS
 1. Executar via prompt de comando o 'npm i' na pasta WorldCupMovies.UserInterface para instalar as dependencias.
