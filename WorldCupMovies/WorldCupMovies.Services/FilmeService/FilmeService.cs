@@ -2,9 +2,9 @@
 using System.Linq;
 using WorldCupMovies.Model;
 
-namespace WorldCupMovies.Domain.FilmeDomain
+namespace WorldCupMovies.Services.FilmeService
 {
-    public class FilmeDomain : IFilmeDomain
+    public class FilmeService : IFilmeService
     {
         public IList<Filme> ListarOrdenadoSelecionados(IList<Filme> filmes)
         {

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using WorldCupMovies.Domain.FinalDomain;
 using WorldCupMovies.Model;
+using WorldCupMovies.Services.CompetirService;
 
 namespace WorldCupMovies.ApplicationService.Controllers
 {
@@ -11,17 +11,17 @@ namespace WorldCupMovies.ApplicationService.Controllers
     [AllowAnonymous]
     public class CampeonatoController : ControllerBase
     {
-        public IFinalDomain _finalDomain { get; set; }
+        public ICompetirService _competirService { get; set; }
 
-        public CampeonatoController(IFinalDomain finalDomain)
+        public CampeonatoController(ICompetirService competirService)
         {
-            _finalDomain = finalDomain;
+            _competirService = competirService;
         }
 
         [HttpPost]
         public Final Post([FromBody] IList<Filme> filmes)
         {
-            return _finalDomain.Campeonato(filmes);
+            return _competirService.Competir(filmes);
         }
     }
 }

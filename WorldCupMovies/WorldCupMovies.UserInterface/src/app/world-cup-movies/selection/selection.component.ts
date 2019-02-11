@@ -40,7 +40,7 @@ export class WorldCupMoviesSelectionComponent implements OnInit {
   gerarCampeonato() {
     this.httpService.post<Resultado>('Campeonato', this.listarFilmesSelecionados()).subscribe((result) => {
       this.worldCupMoviesService.setResutadoCampeonato(result);
-      this.router.navigate(['world-cup-movies/result']);
+      this.router.navigate(['copa-filmes/resultado']);
     });
   }
 }

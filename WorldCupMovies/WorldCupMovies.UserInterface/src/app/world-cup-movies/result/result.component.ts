@@ -25,6 +25,6 @@ export class WorldCupMoviesResultComponent implements OnInit {
   }
 
   voltar() {
-    this.router.navigate(['world-cup-movies/selection']);
+    this.router.navigate(['copa-filmes/selecao']);
   }
 }

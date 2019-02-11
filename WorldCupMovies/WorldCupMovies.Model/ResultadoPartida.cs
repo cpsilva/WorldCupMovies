@@ -6,9 +6,17 @@ namespace WorldCupMovies.Model
     {
         public ResultadoPartida(IList<Partida> partidas)
         {
-            Partidas = partidas;
+            _Partida = partidas;
         }
 
-        public IList<Partida> Partidas { get; private set; }
+        private readonly IList<Partida> _Partida = new List<Partida>();
+
+        public IList<Partida> Partidas
+        {
+            get
+            {
+                return _Partida;
+            }
+        }
     }
 }

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldCupMovies.Domain", "WorldCupMovies.Domain\WorldCupMovies.Domain.csproj", "{DA0DCE02-71FA-43ED-9132-1E1C6146C860}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldCupMovies.Services", "WorldCupMovies.Domain\WorldCupMovies.Services.csproj", "{DA0DCE02-71FA-43ED-9132-1E1C6146C860}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldCupMovies.Model", "WorldCupMovies.Model\WorldCupMovies.Model.csproj", "{784A8188-F729-4552-B348-7ED387868034}"
 EndProject
@@ -34,7 +34,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WorldCupMovies.UserInterfac
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldCupMovies.DependencyInjection", "WorldCupMovies.DependencyInjection\WorldCupMovies.DependencyInjection.csproj", "{2C1EB281-6152-41D0-8D13-CED269D28281}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldCupMovies.CrossCutting", "WorldCupMovies.CrossCutting\WorldCupMovies.CrossCutting.csproj", "{B09A8606-896F-499D-A608-762815216320}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldCupMovies.CrossCutting", "WorldCupMovies.CrossCutting\WorldCupMovies.CrossCutting.csproj", "{B09A8606-896F-499D-A608-762815216320}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

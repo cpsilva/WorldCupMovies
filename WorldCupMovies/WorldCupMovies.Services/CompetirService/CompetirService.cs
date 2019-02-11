@@ -1,24 +1,24 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using WorldCupMovies.Domain.FilmeDomain;
 using WorldCupMovies.Model;
+using WorldCupMovies.Services.FilmeService;
 
-namespace WorldCupMovies.Domain.FinalDomain
+namespace WorldCupMovies.Services.CompetirService
 {
-    public class FinalDomain : IFinalDomain
+    public class CompetirService : ICompetirService
     {
-        public IFilmeDomain _filmeDomain { get; set; }
+        private readonly IFilmeService _filmeService;
 
-        public FinalDomain(IFilmeDomain filmeDomain)
+        public CompetirService(IFilmeService filmeService)
         {
-            _filmeDomain = filmeDomain;
+            _filmeService = filmeService;
         }
 
-        public Final Campeonato(IList<Filme> filmes)
+        public Final Competir(IList<Filme> filmes)
         {
-            var participantes = _filmeDomain.ListarOrdenadoSelecionados(filmes);
+            var participantes = _filmeService.ListarOrdenadoSelecionados(filmes);
 
-            var resultadoPartida = FaseGrupos(participantes);
+            var resultadoPartida = CompetirFaseGrupos(participantes);
 
             var resultadoUltimaPartida = resultadoPartida.Last().Partidas.Last();
 
@@ -45,7 +45,7 @@ namespace WorldCupMovies.Domain.FinalDomain
             return resultadoJogo;
         }
 
-        private IEnumerable<ResultadoPartida> FaseGrupos(IList<Filme> participantes)
+        private IEnumerable<ResultadoPartida> CompetirFaseGrupos(IList<Filme> participantes)
         {
             var resultadoPartidas = new List<ResultadoPartida>();
 

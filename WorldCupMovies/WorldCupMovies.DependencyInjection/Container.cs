@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using System;
-using WorldCupMovies.Domain.FilmeDomain;
-using WorldCupMovies.Domain.FinalDomain;
+using WorldCupMovies.Services.CompetirService;
+using WorldCupMovies.Services.FilmeService;
 
 namespace WorldCupMovies.DependencyInjection
 {
@@ -31,8 +31,8 @@ namespace WorldCupMovies.DependencyInjection
             _services = services ?? new ServiceCollection();
 
             // WorldCupMovies.Domain
-            _services.AddScoped<IFilmeDomain, FilmeDomain>();
-            _services.AddScoped<IFinalDomain, FinalDomain>();
+            _services.AddScoped<IFilmeService, FilmeService>();
+            _services.AddScoped<ICompetirService, CompetirService>();
 
             return _services;
         }

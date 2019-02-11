@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WorldCupMovies.Domain\WorldCupMovies.Domain.csproj" />
+    <ProjectReference Include="..\WorldCupMovies.Domain\WorldCupMovies.Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>

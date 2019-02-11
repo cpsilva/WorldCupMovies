@@ -13,7 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\WorldCupMovies.CrossCutting\WorldCupMovies.CrossCutting.csproj" />
     <ProjectReference Include="..\WorldCupMovies.DependencyInjection\WorldCupMovies.DependencyInjection.csproj" />
-    <ProjectReference Include="..\WorldCupMovies.Domain\WorldCupMovies.Domain.csproj" />
+    <ProjectReference Include="..\WorldCupMovies.Domain\WorldCupMovies.Services.csproj" />
   </ItemGroup>
 
 </Project>

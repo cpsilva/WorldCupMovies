@@ -8,9 +8,9 @@ import { WorldCupMoviesSelectionComponent } from './selection/selection.componen
 const routes: Routes = [
     {
         children: [
-            { path: '', pathMatch: 'full', redirectTo: 'selection' },
-            { path: 'result', component: WorldCupMoviesResultComponent },
-            { path: 'selection', component: WorldCupMoviesSelectionComponent }
+            { path: '', pathMatch: 'full', redirectTo: 'selecao' },
+            { path: 'resultado', component: WorldCupMoviesResultComponent },
+            { path: 'selecao', component: WorldCupMoviesSelectionComponent }
         ],
         component: WorldCupMoviesComponent,
         path: ''
