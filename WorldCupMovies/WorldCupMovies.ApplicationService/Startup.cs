@@ -18,10 +18,9 @@ namespace WorldCupMovies.ApplicationService
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDependencyInjectionCustom(Configuration);
             services.AddCors();
             services.AddMvcCustom();
-            Container.RegisterServices(services);
+            services.RegisterServices();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

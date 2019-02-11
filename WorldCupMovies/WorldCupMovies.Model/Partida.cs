@@ -9,6 +9,7 @@
         }
 
         public Filme Vencedor { get; private set; }
+
         public Filme Perdedor { get; private set; }
     }
 }

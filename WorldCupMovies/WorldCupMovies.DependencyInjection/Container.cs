@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using System;
-using WorldCupMovies.Services.CompetirService;
+using WorldCupMovies.Services.CampeonatoService;
 using WorldCupMovies.Services.FilmeService;
 
 namespace WorldCupMovies.DependencyInjection
@@ -9,32 +9,16 @@ namespace WorldCupMovies.DependencyInjection
     {
         private static IServiceProvider _serviceProvider;
 
-        private static IServiceCollection _services;
-
         public static T GetService<T>()
         {
-            if (_services == null)
-            {
-                _services = RegisterServices();
-            }
-
-            if (_serviceProvider == null)
-            {
-                _serviceProvider = _services.BuildServiceProvider();
-            }
-
             return _serviceProvider.GetService<T>();
         }
 
-        public static IServiceCollection RegisterServices(IServiceCollection services = null)
+        public static void RegisterServices(this IServiceCollection services)
         {
-            _services = services ?? new ServiceCollection();
-
-            // WorldCupMovies.Domain
-            _services.AddScoped<IFilmeService, FilmeService>();
-            _services.AddScoped<ICompetirService, CompetirService>();
-
-            return _services;
+            services.AddScoped<IFilmeService, FilmeService>();
+            services.AddScoped<ICampeonatoService, CampeonatoService>();
+            _serviceProvider = services.BuildServiceProvider();
         }
     }
 }

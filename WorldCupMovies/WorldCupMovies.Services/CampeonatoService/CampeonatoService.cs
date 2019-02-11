@@ -4,13 +4,13 @@ using System.Linq;
 using WorldCupMovies.Model;
 using WorldCupMovies.Services.FilmeService;
 
-namespace WorldCupMovies.Services.CompetirService
+namespace WorldCupMovies.Services.CampeonatoService
 {
-    public class CompetirService : ICompetirService
+    public class CampeonatoService : ICampeonatoService
     {
         private readonly IFilmeService _filmeService;
 
-        public CompetirService(IFilmeService filmeService)
+        public CampeonatoService(IFilmeService filmeService)
         {
             _filmeService = filmeService;
         }

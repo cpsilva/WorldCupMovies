@@ -1,14 +1,14 @@
 export class ConverterService {
   objectToQueryString(obj) {
-    let str = [];
+    const str = [];
 
     this.iterate(obj, str);
 
     return str.join('&');
   }
 
-  private iterate(obj, str, propertyParent = undefined) {
-    for (let property in obj) {
+  private iterate(obj: any, str: any, propertyParent?: any) {
+    for (const property in obj) {
       if (obj.hasOwnProperty(property)) {
         if (typeof obj[property] == 'object') {
           this.iterate(obj[property], str, property);

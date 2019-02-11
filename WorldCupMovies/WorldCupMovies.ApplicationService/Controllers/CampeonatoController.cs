@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using WorldCupMovies.Model;
-using WorldCupMovies.Services.CompetirService;
+using WorldCupMovies.Services.CampeonatoService;
 
 namespace WorldCupMovies.ApplicationService.Controllers
 {
@@ -11,17 +11,17 @@ namespace WorldCupMovies.ApplicationService.Controllers
     [AllowAnonymous]
     public class CampeonatoController : ControllerBase
     {
-        public ICompetirService _competirService { get; set; }
+        public ICampeonatoService _campeonatoService { get; set; }
 
-        public CampeonatoController(ICompetirService competirService)
+        public CampeonatoController(ICampeonatoService campeonatoService)
         {
-            _competirService = competirService;
+            _campeonatoService = campeonatoService;
         }
 
         [HttpPost]
         public Final Post([FromBody] IList<Filme> filmes)
         {
-            return _competirService.Competir(filmes);
+            return _campeonatoService.Competir(filmes);
         }
     }
 }

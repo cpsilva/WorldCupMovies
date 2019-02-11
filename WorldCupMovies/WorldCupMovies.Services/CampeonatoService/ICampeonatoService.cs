@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using WorldCupMovies.Model;
 
-namespace WorldCupMovies.Services.CompetirService
+namespace WorldCupMovies.Services.CampeonatoService
 {
-    public interface ICompetirService
+    public interface ICampeonatoService
     {
         Final Competir(IList<Filme> filmes);
     }

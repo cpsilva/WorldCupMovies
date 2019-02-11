@@ -26,19 +26,19 @@ export class HttpService {
   }
 
   put<T>(service: string, data?: any) {
-    let url = environment.serviceUrl + service;
+    const url = environment.serviceUrl + service;
 
     return this.http.put<T>(url, data);
   }
 
   post<T>(service: string, data?: any) {
-    let url = environment.serviceUrl + service;
+    const url = environment.serviceUrl + service;
 
     return this.http.post<T>(url, data);
   }
 
   delete(service: string, data?: any) {
-    let url = environment.serviceUrl + service + '/' + data;
+    const url = environment.serviceUrl + service + '/' + data;
 
     return this.http.delete(url);
   }

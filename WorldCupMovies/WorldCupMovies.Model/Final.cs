@@ -9,6 +9,7 @@
         }
 
         public Filme Campeao { get; private set; }
+
         public Filme Vice { get; private set; }
     }
 }
